@@ -38,7 +38,7 @@ html, body {
 	font-family: "Yantramanav", sans-serif;
 	font-size: 700%;
 	font-weight: 400;
-	color: #E1EFE9;
+	color: white;
 	line-height: 70%;
 	text-shadow: 2px 2px 30px #535456;
 }
@@ -46,7 +46,7 @@ html, body {
 .work {
 	font-family: "Yantramanav", sans-serif;
 	font-size: 200%;
-	font-weight: 400;
+	font-weight: 700;
 	color: #E1EFE9;
 	line-height: 70%;
 	line-height: 3;
