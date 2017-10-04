@@ -13,7 +13,7 @@ module.exports = function(app) {
     // // POST route for saving a new post
     app.post("/api/register", function(req, res) {
         db.users.create(req.body).then(function() {
-            res.send({redirect: '/wanderlist'});
+            res.send({redirect: '/signup'});
         });
     });
 

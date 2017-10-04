@@ -1,0 +1,28 @@
+/*===== intro ====*/
+.intro{
+    height: 75vh;
+    background: url("pics/mountain.JPG") no-repeat fixed top center/ cover;
+}
+
+.intro-content > h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.intro-content > a > i.lnr{
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.intro-content > p {
+    color: #f8f8f8;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 45px;
+    max-width: 450px;
+}
