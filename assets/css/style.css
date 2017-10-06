@@ -13,7 +13,7 @@ html, body {
 	height: 100%; 
 	width: 100%;
 	margin: auto;
-	background: url(https://static.pexels.com/photos/593165/pexels-photo-593165.jpeg);
+	background: url("https://static.pexels.com/photos/590798/pexels-photo-590798.jpeg");
 	display: table;
 	top: 0;
 	background-size: cover;
@@ -38,9 +38,29 @@ html, body {
 	font-family: "Yantramanav", sans-serif;
 	font-size: 700%;
 	font-weight: 400;
+	color: white;
+	line-height: 70%;
+	text-shadow: 2px 2px 30px #535456;
+}
+
+.work {
+	font-family: "Yantramanav", sans-serif;
+	font-size: 200%;
+	font-weight: 700;
 	color: #E1EFE9;
 	line-height: 70%;
+	line-height: 3;
+	text-shadow: 2px 2px 30px #535456;
 }
+
+
+
+
+
+
+
+
+
 
 
 
