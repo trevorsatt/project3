@@ -5,7 +5,7 @@
 
 // Dependencies
 var path = require("path");
-
+var passport = require("passport");
 // Routes
 // =============================================================
 module.exports = function(app) {
@@ -18,4 +18,17 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../views/signup.html"));
   });
 
+
+  // app.post('/login',
+  // passport.authenticate('local'),
+  // function(req, res) {
+    // If this function gets called, authentication was successful.
+    // `req.user` contains the authenticated user.
+    // res.redirect('/users/' + req.user.username);
+    // console.log("time works");
+  // });
+
+  // app.post('/login',
+  // passport.authenticate('local', { successRedirect: '/',
+                                  //  failureRedirect: '/login' }));
 };

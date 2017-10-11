@@ -7,6 +7,8 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
+var session = require("express-session");
+var passport = require("passport");
 
 // Sets up the Express App
 // =============================================================
@@ -25,6 +27,13 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Static directory
 app.use(express.static("assets"));
 
+// MIDDLEWARE
+  app.use(passport.initialize());
+  app.use(passport.session());
+
+
+
+
 // Routes
 // =============================================================
 require("./controllers/api-routes.js")(app);
@@ -32,8 +41,8 @@ require("./controllers/html-routes.js")(app);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
-db.sequelize.sync().then(function() {
+db.sequelize.sync({force:true}).then(function() {
   app.listen(PORT, function() {
-    console.log("App listening on PORT %s " + PORT);
+    console.log("App listening on PORT" + PORT);
   });
 });
