@@ -1,9 +1,35 @@
 $(document).ready(function($) {
+    var storedValue = localStorage.getItem("server");
+    // use this function to clear your local storage
+    // localStorage.clear();
+    setInterval(function(){ 
+        localStorage.clear();
+    }, 600000);
+
+    console.log(localStorage);
+
+    for (var i = 0, len = localStorage.length; i < len; ++i) {
+      console.log(localStorage.getItem(localStorage.key(i)));
+      var newTask = localStorage.getItem(localStorage.key(i));
+      var newLi = $('<li>' + "\u2022 " + newTask + '</li>');
+      newLi.on('click', function() {
+          var itemToRemove = this.innerHTML.replace("\u2022", "").trim();
+          console.log(itemToRemove);
+          localStorage.removeItem(itemToRemove);
+          $(this).remove(); // Attach the event handler *before* adding the element
+      });
+      $('ul').prepend(newLi); // To put the new task at the top of the list
+    }
+
     $('form').submit(function() {
         if ($('.input').val() !== '') {
+            localStorage.setItem($('.input').val(), $('.input').val());
             var newTask = $('.input').val();
             var newLi = $('<li>' + "\u2022 " + newTask + '</li>');
             newLi.on('click', function() {
+                var itemToRemove = this.innerHTML.replace("\u2022", "").trim();
+                console.log(itemToRemove);
+                localStorage.removeItem(itemToRemove);
                 $(this).remove(); // Attach the event handler *before* adding the element
             });
             $('ul').prepend(newLi); // To put the new task at the top of the list
@@ -34,3 +60,4 @@ var bgImg = 'url(' + images[randomNumber] + ')';
 
 $('body').css({'background':bgImg, 'background-size':'cover', });
 });
+
