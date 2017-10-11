@@ -1,0 +1,29 @@
+.todo {
+    color: white;
+
+}
+
+ul {
+    display: inline-block;
+    cursor: move;
+    text-align: left;
+    width: 300px;
+    max-width: 100%;
+}
+
+li {
+    color: lightgray;
+}
+
+li:first-child {
+    font-size: 130%;
+    color: white;
+}
+
+input[type='submit'] {
+    background-color: red;
+    border: 0;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}

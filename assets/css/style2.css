@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+/*webage reset*/
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.intro {
+	height: 100%; 
+	width: 100%;
+	margin: auto;
+	display: table;
+	top: 0;
+	background-size: cover;
+}
+
+
+.inner {
+	/*background: url("https://images.unsplash.com/photo-1498248529262-f5084e1d0d36?dpr=1&auto=compress,format&fit=crop&w=2700&h=&q=80&cs=tinysrgb&crop=");*/ 
+	background-color: rgba(0,0,0,0.5);
+	background-size: cover;
+}
+
+.intro .inner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+
+}
+
+.content {
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+/*	padding-bottom: 15%;*/
+}
+
+
+#clock {
+	font-family: "Yantramanav", sans-serif;
+	font-size: 700%;
+	font-weight: 400;
+	color: white;
+	line-height: 70%;
+	text-shadow: 5px 5px 100px #535456;
+}
+
+.work {
+	font-family: "Yantramanav", sans-serif;
+	font-size: 200%;
+	font-weight: 700;
+	color: white;
+	line-height: 70%;
+	line-height: 3;
+	text-shadow: 5px 5px 100px #535456;
+}
+
+#todo {
+	color: white;
+	text-shadow: 5px 5px 100px #535456;
+    opacity: 0.8;
+}
+
+
+.weather {
+	color: white;
+   position: absolute;
+   top: 50px;
+   right: 50px;
+}
+
+tooltip #tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+#tooltip:hover #tooltiptext {
+    visibility: visible;
+}
+
+
+
+
+/*--- Media Queries --*/
+@media screen and (max-width: 900px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 480px) {
+	
+}
