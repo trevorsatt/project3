@@ -7,45 +7,75 @@ html, body {
 	padding: 0;
 	height: 100%;
 	width: 100%;
-	background: url("https://images.unsplash.com/photo-1431794062232-2a99a5431c6c?dpr=1&auto=compress,format&fit=crop&w=1950&h=&q=80&cs=tinysrgb&crop=");
 	background-size: cover;
 }
 
-h1{
-	font-family: 'Permanent Marker', cursive;
+/*h1{
 	color: #158DF0;
 	font-size: 10px;
+}*/
 
-}
-#quotes{
-	/* margin-left: -210px; */
-	text-align: center;
 
+
+/*#weatherPic {
+	padding-right: 5px;
+	padding-top: 5px;
+	margin-left: 20px;
 	color: white;
-
+	font-size: 1em;
 }
+*/
+
+#currentDegree {
+	padding-right: 25px;
+	padding-top: 25px;
+	margin-left: 25px;
+	color: white;
+	font-size: 1.8em;
+	font-family: "Yantramanav", sans-serif;
+}
+
+#weather {
+	padding-right: 25px;
+	margin-left: 25px;
+	color: white;
+	font-size: 1.1em;
+	/* font-family: 'Anton', sans-serif; */
+	opacity: 0.7;
+	margin-bottom: 9%;
+	font-family: "Yantramanav", sans-serif;
+}
+
+
 .intro {
-	/* height: 100%;  */
-	/* width: 100%; */
+	height: 100%; 
+	width: 100%;
 	margin: auto;
-	/* background: url("https://images.unsplash.com/photo-1431794062232-2a99a5431c6c?dpr=1&auto=compress,format&fit=crop&w=1950&h=&q=80&cs=tinysrgb&crop="); */
 	display: table;
 	top: 0;
 	background-size: cover;
 }
 
+
+.inner {
+	/*background: url("https://images.unsplash.com/photo-1498248529262-f5084e1d0d36?dpr=1&auto=compress,format&fit=crop&w=2700&h=&q=80&cs=tinysrgb&crop=");*/ 
+	background-color: rgba(0,0,0,0.5);
+	background-size: cover;
+}
+
 .intro .inner {
 	display: table-cell;
-	vertical-align: middle;
+/*	vertical-align: middle;*/
 	width: 100%;
 	max-width: none;
+
 }
 
 .content {
 	max-width: 600px;
 	margin: 0 auto;
 	text-align: center;
-	padding-bottom: 15%;
+/*	padding-bottom: 15%;*/
 }
 
 
@@ -55,7 +85,7 @@ h1{
 	font-weight: 400;
 	color: white;
 	line-height: 70%;
-	text-shadow: 2px 2px 30px #535456;
+	text-shadow: 5px 5px 100px #535456;
 }
 
 .work {
@@ -63,44 +93,33 @@ h1{
 	font-size: 200%;
 	font-weight: 700;
 	color: white;
-	line-height: 70%;
 	line-height: 3;
 	text-shadow: 5px 5px 100px #535456;
 }
 
-#weather {
-	padding-right: 25px;
-	padding-top: 10px;
-	margin-left: 20px;
+
+#quotes{
+	/* margin-left: -210px; */
+	text-align: center;
 	color: white;
-	font-size: 1em;
-	/* font-family: 'Anton', sans-serif; */
+	margin-top: 10px;
+	opacity: 0.6;
+
 }
 
-#weatherPic {
-	padding-right: 5px;
-	padding-top: 5px;
-	margin-left: 20px;
-	color: white;
-	font-size: 1em;
-}
-
-#currentDegree {
-	padding-right: 25px;
-	padding-top: 0px;
-	margin-left: 20px;
-	color: white;
-	font-size: 1.5em;
+#buttons {
+	margin-top: 25%;
 }
 
 /* WHY YOU'RE HERE MODULE */
-html.modal-active, body.modal-active {
+/*html.modal-active, body.modal-active {
 	overflow: hidden;
   }
 .modal1{
 	background-color:cadetblue;
 }
-  #modal-container {
+*/
+/*  #modal-container {
 	position: fixed;
 	display: table;
 	height: 100%;
@@ -110,6 +129,7 @@ html.modal-active, body.modal-active {
 	transform: scale(0);
 	z-index: 1;
   }
+
   #modal-container.one {
 	transform: scaleY(0.01) scaleX(0);
 	animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
@@ -162,48 +182,40 @@ html.modal-active, body.modal-active {
 	stroke-width: 2px;
 	stroke-dasharray: 778;
 	stroke-dashoffset: 778;
-  }
-  .content1 h1 {
-/*	padding: 75px 0 30px 0;*/
-/*	margin-right: 10px;*/
-/*	text-align: right;*/
+  }*/
+
+/*  .content1 h1 {
 	font-size: 30px;
-/*	line-height: 30px;*/
 	font-family: "Yantramanav", sans-serif;
 	color: #E1EFE9;
 	text-shadow: 2px 2px 30px #535456;
-
-
-/*	padding-left: 20px;*/
-/*	padding-top: 10px;*/
 	margin-left: 20px;
   }
 
   .content1 .buttons {
 	max-width: 800px;
-	/* margin-left: -100px; */
-	margin-top: -150px;
 	padding: 0;
 	text-align: center;
-  }
-  .content1 .buttons .button {
+  }*/
+
+/*  .content1 .buttons .button {
 	display: inline-block;
 	text-align: center;
 	padding: 10px 15px;
 	margin-left: -410px;
-	/* background: red; */
 	font-size: 18px;
 	color: white;
 	background-color: #009bd5;;
 	border-radius: 3px;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 	cursor: pointer;
-  }
-  .content1 .buttons .button:hover {
+  }*/
+
+ /* .content1 .buttons .button:hover {
 	color: white;
 	background: cadetblue;
-  }
-  
+  }*/
+/*  
   @keyframes unfoldIn {
 	0% {
 	  transform: scaleY(0.005) scaleX(0);
@@ -224,11 +236,9 @@ html.modal-active, body.modal-active {
 	}
 	100% {
 	  transform: scaleY(0.005) scaleX(0);
-	}
+	}*/
 /* module 2 end */
 
-
-	}
 
 /*--- Media Queries --*/
 @media screen and (max-width: 900px) {

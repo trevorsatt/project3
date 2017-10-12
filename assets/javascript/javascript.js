@@ -8,7 +8,7 @@ $(document).ready(function() {
 
         function displayTemp(fTemp, c){
         if(c) return Math.round((fTemp - 32) * (5/9) + "C");
-        return Math.round(fTemp) + "F";
+        return Math.round(fTemp) + "&#176";
         }
 
         var loc;
@@ -62,6 +62,25 @@ $(document).ready(function() {
 
 });
 
+// Photo randomizer
+$(document).ready(function(){
+    var images = ['pics/background0.jpeg',
+                'pics/background1.jpeg',
+                'pics/background2.jpeg', 
+                'pics/background3.jpeg',
+                'pics/background4.jpeg',
+                'pics/background5.jpeg', 
+                'pics/background6.jpeg',
+                'pics/background7.jpeg',
+                'pics/background8.jpg',
+                'pics/background9.jpeg',
+                'pics/background10.jpeg'];
+
+var randomNumber = Math.floor(Math.random() * images.length);
+var bgImg = 'url(' + images[randomNumber] + ')';
+
+$('body').css({'background':bgImg, 'background-size':'cover', });
+});
 
 
 

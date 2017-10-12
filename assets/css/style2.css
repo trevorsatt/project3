@@ -9,6 +9,26 @@ html, body {
 	width: 100%;
 }
 
+#currentDegree {
+	padding-right: 25px;
+	padding-top: 25px;
+	margin-left: 25px;
+	color: white;
+	font-size: 1.8em;
+	font-family: "Yantramanav", sans-serif;
+}
+
+#weather {
+	padding-right: 25px;
+	margin-left: 25px;
+	color: white;
+	font-size: 1.1em;
+	/* font-family: 'Anton', sans-serif; */
+	opacity: 0.7;
+	margin-bottom: 9%;
+	font-family: "Yantramanav", sans-serif;
+}
+
 .intro {
 	height: 100%; 
 	width: 100%;
@@ -27,7 +47,7 @@ html, body {
 
 .intro .inner {
 	display: table-cell;
-	vertical-align: middle;
+/*	vertical-align: middle;*/
 	width: 100%;
 	max-width: none;
 
@@ -63,18 +83,18 @@ html, body {
 #todo {
 	color: white;
 	text-shadow: 5px 5px 100px #535456;
-    opacity: 0.8;
+    opacity: 0.9;
+    font-size: 14px;
 }
 
 
-.weather {
+#quotes{
+	text-align: center;
 	color: white;
-   position: absolute;
-   top: 50px;
-   right: 50px;
+	margin-top: 18%;
+	opacity: 0.5;
+
 }
-
-
 
 
 
