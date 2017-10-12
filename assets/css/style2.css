@@ -92,7 +92,9 @@ html, body {
 	text-align: center;
 	color: white;
 	margin-top: 18%;
-	opacity: 0.5;
+	opacity: 0.6;
+	font-family: "Yantramanav", sans-serif;
+	font-size: 1.2em;
 
 }
 

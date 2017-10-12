@@ -45,7 +45,7 @@ $(document).ready(function() {
                 '"Fitness: A lifestyle with no finish line"',
                 '"Every time you eat or drink, you are either feeding disease or fighting it."',
                 '"70% of people that start a fitness plan quit. EXCEPT YOU, not this time!"',
-                '"You can feel sore tomorrow or you can feel sorry tomorrow. You Choose."',
+                '"You can feel sore tomorrow or you can feel sorry tomorrow. You choose."',
                 '"I already know what giving up feels like. I want to see what happens if I don\'t."'
         ];
 
