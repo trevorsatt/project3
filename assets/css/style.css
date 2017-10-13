@@ -132,8 +132,8 @@ html, body {
 .modal1{
 	background-color:cadetblue;
 }
-*/
-/*  #modal-container {
+
+  #modal-container {
 	position: fixed;
 	display: table;
 	height: 100%;
@@ -196,9 +196,9 @@ html, body {
 	stroke-width: 2px;
 	stroke-dasharray: 778;
 	stroke-dashoffset: 778;
-  }*/
+  }
 
-/*  .content1 h1 {
+.content1 h1 {
 	font-size: 30px;
 	font-family: "Yantramanav", sans-serif;
 	color: #E1EFE9;
@@ -210,9 +210,8 @@ html, body {
 	max-width: 800px;
 	padding: 0;
 	text-align: center;
-  }*/
-
-/*  .content1 .buttons .button {
+  }
+  .content1 .buttons .button {
 	display: inline-block;
 	text-align: center;
 	padding: 10px 15px;
@@ -223,13 +222,13 @@ html, body {
 	border-radius: 3px;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 	cursor: pointer;
-  }*/
+  }
 
- /* .content1 .buttons .button:hover {
+  .content1 .buttons .button:hover {
 	color: white;
 	background: cadetblue;
-  }*/
-/*  
+  }
+  
   @keyframes unfoldIn {
 	0% {
 	  transform: scaleY(0.005) scaleX(0);
