@@ -10,6 +10,9 @@ var path = require("path");
 var session = require("express-session");
 var passport = require("passport");
 
+// ROUTES
+var env = require('dotenv').load();
+
 // Sets up the Express App
 // =============================================================
 var app = express();
@@ -28,9 +31,9 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.use(express.static("assets"));
 
 // MIDDLEWARE
-  app.use(passport.initialize());
-  app.use(passport.session());
-
+app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true}));
+app.use(passport.initialize());
+app.use(passport.session());
 
 
 
@@ -39,9 +42,11 @@ app.use(express.static("assets"));
 require("./controllers/api-routes.js")(app);
 require("./controllers/html-routes.js")(app);
 
+require('./app/config/passport/passport.js')(passport, db.user);
+
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
-db.sequelize.sync({force:true}).then(function() {
+db.sequelize.sync({force:false}).then(function() {
   app.listen(PORT, function() {
     console.log("App listening on PORT" + PORT);
   });
