@@ -14,8 +14,8 @@ module.exports = function(app) {
     app.post('/api/login', passport.authenticate('local-signin'), function(req, res) {
             // If this function gets called, authentication was successful.
             // `req.user` contains the authenticated user.
-           
-            res.json({redirect: '/'});
+        
+            res.json({redirect: '/', req: req.user});
     });
 
     app.post('/api/register', passport.authenticate('local-signup'), function(req, res) {

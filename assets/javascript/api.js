@@ -44,8 +44,10 @@ $(document).ready(function() {
             url: '/api/login',
             data: data2,
             success: function(data, textStatus) {
-        
+                console.log(data);
                 console.log(5);
+                localStorage.setItem("username", data.req.username);
+                
                 if (data.redirect) {
                     window.location.href = data.redirect;
                 }

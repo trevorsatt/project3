@@ -1,4 +1,6 @@
 $(document).ready(function($) {
+    $('.user').html(localStorage.getItem('username'));
+    
     var storedValue = localStorage.getItem("server");
     // use this function to clear your local storage
     // localStorage.clear();
@@ -9,6 +11,9 @@ $(document).ready(function($) {
     console.log(localStorage);
 
     for (var i = 0, len = localStorage.length; i < len; ++i) {
+      if (localStorage.key(i) == 'username') {
+        continue;
+      }
       console.log(localStorage.getItem(localStorage.key(i)));
       var newTask = localStorage.getItem(localStorage.key(i));
       var newLi = $('<li>' + "\u2022 " + newTask + '</li>');
