@@ -84,7 +84,10 @@ $('body').css({'background':bgImg, 'background-size':'cover', });
 
 
 
-
+// $(document).ready(function(){
+//   $('.tap-target').tapTarget('open');
+// // $('.tap-target').tapTarget('close');
+// });
 
 //         var long;
 //         var lat;
