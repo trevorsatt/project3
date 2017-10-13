@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    $("#done").click(function() {
-    
+    $("#done").click(function(e) {
+        e.preventDefault();
          var password = $('#psw').val().trim();
          var password_confirmation = $('#psw-repeat').val().trim();
          var username = $("#username").val().trim();
@@ -28,25 +28,30 @@ $(document).ready(function() {
          });
      });
 
-     $("#done2").click(function() {
-        console.log("signing in");
+     $("#done2").click(function(e) {
+         e.preventDefault();
+
         var password2 = $('#psw2').val().trim();
         var username2 = $("#username2").val().trim();
 
         var data2 = {
-            username2: username2,
-            password2: password2
+            username: username2,
+            password: password2
         };
-
+        console.log(data2);
         $.ajax({
             type: 'POST',
             url: '/api/login',
             data: data2,
             success: function(data, textStatus) {
-                console.log(data.redirect);
+        
+                console.log(5);
                 if (data.redirect) {
                     window.location.href = data.redirect;
                 }
+            },
+            error: function(data) {
+                $('#login-error').html("Incorrect login.");
             }
 
         });
