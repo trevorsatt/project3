@@ -86,28 +86,6 @@ $('body').css({'background':bgImg, 'background-size':'cover', });
 
 
 
-//         var long;
-//         var lat;
-//         var api ="https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "units=imperial" + "&APPID=a6cbd508033d26ef1a37c676121a8ce5";
-        
-//         if (navigator.geolocation) {
-//                 navigator.geolocation.getCurrentPosition(function(position) {
-//                         long = position.coords.longitude;
-//                         lat = position.coords.latitude;
-                        
-                        
-//                         $("#data").html("latitude: " + lat + "<br>longitude: " + long);
-                        
-                        
-//                         $.getJSON(api, function(data) {
-//                                 console.log(data.coord.lon);
-//                                 console.log(data);
-//                         });
-//                         // navigator.geolocation.getCurrentPosition(getCurrentLocation);
-//           });
-//         }
-//       });
-
 
 
 

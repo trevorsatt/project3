@@ -29,6 +29,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <!-- FONT -->
     <link href="https://fonts.googleapis.com/css?family=Anton|Lobster|Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine|Marck+Script" rel="stylesheet">
 </head>
 
 <body>
@@ -41,7 +42,7 @@
                 <div id="currentDegree"></div>
                 <div id="weather"></div>
 <!--            <div id="weatherPic"></div> -->
-
+            </div>
  
 
                 <div class="content">
@@ -63,6 +64,13 @@
                     <!-- Modal Structure -->
                     <div id="modal1" class="modal">
                         <form class="modal-content animate" action="/api/register">
+                    <div class="Article">
+                            
+                    <h3><div style="text-align: center">It All Starts Here</div></h3>
+                           
+                    </div>
+
+
                             <div class="modal-content">
                                 <label><b>Username</b></label>
                                 <input type="text" placeholder="Enter Username" id="username" name="username" required>
@@ -79,11 +87,18 @@
                     <!-- Modal Structure 2 -->
                     <div id="modal2" class="modal">
                         <form class="modal-content animate" action="/login">
+                    <div class="Article">
+                            
+                    <h3><div style="text-align: center">Welcome Back!</div></h3>
+                           
+                    </div>
+
                             <div class="modal-content">
                                 <label><b>Username</b></label>
                                 <input type="text" placeholder="Enter Username" id="username2" name="username" required>
                                 <label><b>Password</b></label>
                                 <input type="password" placeholder="Enter Password" id="psw2" name="psw" required>
+                                <div id="login-error" style="color:#ff0000"></div>
                             </div>
                             <div class="modal-footer">
                                 <a href="#!" id="done2" class="btn waves-effect waves-teal">Done</a>
@@ -96,32 +111,43 @@
                     <!-- <button onclick="newQuote()" class="buttons">New Quote</button> -->
                     </section>
                 </div>
-            </div>
-    </section>
 
 
     <!-- 2ND MODULE -->
-<!--     <div id="modal-container">
+    <div class="content1">
+        <div id="one" class="button">
+      <h1>Why REACH?</h1>
+    </div>
+      <!-- <div class="buttons"> -->
+    <!-- <div id="one" class="button">You're Answer</div> -->
+    <!-- </div> -->
+
+<div id="modal-container">
         <div class="modal-background">
           <div class="modal1">
-            <h2>Why REACH?</h2>
-            <p><font color="white">Our mission is to help you reach the top!</font></p>
+            <h2><font color="white" style="font-family: 'Tangerine', cursive;">Mission</font></h2>
+    <hr>
         
             <ul>
-                <li><strong><font color="blue">R</font>each:</strong>Reach is designed to make assist with motivating YOU to reach YOUR health and fitness goals.</li>
-                <li><strong><font color="blue">E</font>ncourage:</strong> We encourage you to always do your best, lose the excuses and make change happen!</li>
-                <li><strong><font color="blue">A</font>cheive:</strong> Checking in on this site daily will assist you with acheiving your goals.</li>
-                <li><strong><font color="blue">C</font>hallenge:</strong> Challenge yourself daily by setting up your daily/weekly goals.</li>
-                <li><strong><font color="blue">H</font>elp:</strong> There will be articles, tips, blogs and support to help you get where you want to get.</li>
+                <font color="#008B8B", size="6px">
+                <li><div style="font-family: 'Marck Script', 'cursive';"><strong><font color="white">R</font>each:</strong> Designed to assist with <font color="white"> motivating </font> to reach your health and fitness goals.</div></li>
+                <li><div style="font-family: 'Marck Script', 'cursive';"><strong><font color="white">E</font>ncourage:</strong> We encourage you to always do your best. Lose the excuses and make change happen!</div></li>
+                <li><div style="font-family: 'Marck Script', 'cursive';"><strong><font color="white">A</font>cheive:</strong> Checking in on this site daily will assist you with <font color="white">acheiving</font> your goals.</div></li>
+                <li><div style="font-family: 'Marck Script', 'cursive';"><strong><font color="white">C</font>hallenge:</strong> Challenge yourself daily by setting up your daily/weekly goals.</div></li>
+                <li><div style="font-family: 'Marck Script', 'cursive';"><strong><font color="white">H</font>elp:</strong> There will be articles, tips, blogs and <font color="white">support</font> help you get where you want to get.</div></li>
+                </font>
             </ul>
 
-            <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"preserveAspectRatio="none">
-                <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
-            </svg>
-
+            <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+                                      <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+                                  </svg>
           </div>
         </div>
-      </div> -->
+
+</div>
+    </div>
+        </div>
+    </section>
 
     <script>
          $(document).ready(function(){

@@ -10,21 +10,14 @@ html, body {
 	background-size: cover;
 }
 
-/*h1{
-	color: #158DF0;
-	font-size: 10px;
-}*/
+.Article {
+    padding: 0spx 0px 2px 2px;
+    background-color: rgba(20,120,120,0.6);
+    box-shadow: 7px 7px 5px #888888;
+    color: white;
+    
+  }
 
-
-
-/*#weatherPic {
-	padding-right: 5px;
-	padding-top: 5px;
-	margin-left: 20px;
-	color: white;
-	font-size: 1em;
-}
-*/
 
 
 #currentDegree {
@@ -125,8 +118,8 @@ html, body {
 
 
 
-/* WHY YOU'RE HERE MODULE */
-/*html.modal-active, body.modal-active {
+/* WHY REACH MODULE */
+html.modal-active, body.modal-active {
 	overflow: hidden;
   }
 .modal1{
@@ -228,7 +221,13 @@ html, body {
 	color: white;
 	background: cadetblue;
   }
-  
+	
+	.intro .inner #more {
+		margin-bottom: -100px;
+	}
+
+
+	
   @keyframes unfoldIn {
 	0% {
 	  transform: scaleY(0.005) scaleX(0);
@@ -249,8 +248,9 @@ html, body {
 	}
 	100% {
 	  transform: scaleY(0.005) scaleX(0);
-	}*/
+	}
 /* module 2 end */
+	}
 
 
 /*--- Media Queries --*/
